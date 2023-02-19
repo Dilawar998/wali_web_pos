@@ -5,7 +5,7 @@ import {productSchema} from './addProductSchema';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const AddProduct = () => {
+const EditProduct = () => {
   const navigate = useNavigate();
   const initialValues = {
     Standard:"",
@@ -32,7 +32,7 @@ const AddProduct = () => {
     18:"",
     16:"",    
 }
-const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
+const {values,handleBlur,errors,handleChange,handleSubmit } = useFormik({
   initialValues,
   validationSchema: productSchema,
   onSubmit: (values)=>{
@@ -41,14 +41,12 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
       if(values[key] !== "" && values[key] > "0" ){
         useFulldata[key] = values[key]
       }
-      return useFulldata;
+      return useFulldata
     })
     if(useFulldata !== ""){
       toast("Successfully Product Add");
       // navigate('/dashboard')
-    }
-    
-  }
+    }}
 })
 
 
@@ -262,7 +260,6 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
       {/* Actions Button start */}
       <div className='w-5/5 flex flex-row gap-3 py-5'>
         <div className='border w-1/6 text-center text-sm  p-2 pl-2 rounded-xl bg-blue-900 text-white hover:scale-105 hover:shadow-lg cursor-pointer ' onClick={handleSubmit}> Save </div>
-        <div className='border w-1/6 text-center text-sm  p-2 pl-2 rounded-xl bg-blue-900 text-white hover:scale-105 hover:shadow-lg cursor-pointer ' onClick={handleSubmit}> Save & Continue </div>
         <div className='border w-1/6 text-center text-sm  p-2 pl-2 rounded-xl bg-blue-900 text-white hover:scale-105 hover:shadow-lg cursor-pointer ' onClick={()=> navigate('/dashboard') }> Cancel </div>
 
       </div>
@@ -276,4 +273,4 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
   )
 }
 
-export default AddProduct;
+export default EditProduct;
