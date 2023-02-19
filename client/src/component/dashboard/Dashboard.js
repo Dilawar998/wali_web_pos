@@ -8,25 +8,25 @@ function Dashboard() {
   return (
     <div className='w-5/5 px-10  ml-10 h-screen overflow-auto     '>
       <div className='flex flex-col gap-1 justify-around my-1'>
-      <div className='w-full border m-0 p-2   shadow-xl rounded-b-xl bg-gradient-to-b from-gray-900 to-gray-600'>
+      <div className='w-full border m-0 p-2  bg-gradient-to-r shadow-xl rounded-b-xl from-indigo-500 via-purple-500 to-pink-500  '>
         <h1 className='text-2xl  text-white' >Dashboard</h1>
       </div>
          {/* .................................... */}
         <div className='flex  h-5/5  w-6/6  justify-around   gap-20'>
         {/* customer, order ,Number of Products */}
         {/* .................................... */}
-        <div className='w-full h-3/5  sm:w-2/6 lg:w-2/5 pl-3 pt-2 pb-1 flex items-center rounded-lg bg-gradient-to-t from-gray-900 to-gray-600 border shadow-2xl '>
+        <div className='w-full h-3/5  sm:w-2/6 lg:w-2/5 pl-3 pt-2 pb-1 flex items-center rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border shadow-2xl '>
           <div className=' flex flex-col pl-5 '>
-          <sapn className='flex w-8 h-8 justify-center items-center text-3xl  rounded-lg  bg-gradient-to-t from-gray-900 via-purple-900 to-violet-600'>
+          <sapn className='flex w-8 h-8 justify-center items-center text-3xl  rounded-lg  bg-blue-600'>
           <BsPerson className='text-white text-2xl' /></sapn>
           <span className=' text-white text-sm pt-1'>Number of Customers</span>
           <span className='text-3xl text-white '>3</span>
           </div>
         </div>
         {/* .................................... */}
-        <div className='w-full h-3/5  sm:w-2/6 lg:w-2/5 pl-3 pt-2 pb-1 flex items-center rounded-lg bg-gradient-to-b from-gray-900 to-gray-600 border shadow-2xl '>
+        <div className='w-full h-3/5  sm:w-2/6 lg:w-2/5 pl-3 pt-2 pb-1 flex items-center rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border shadow-2xl '>
           <div className=' flex flex-col pl-5 '>
-          <sapn className='flex w-8 h-8 justify-center items-center text-3xl  rounded-lg bg-gradient-to-t from-gray-900 via-purple-900 to-violet-600'>
+          <sapn className='flex w-8 h-8 justify-center items-center text-3xl  rounded-lg bg-blue-600'>
           <AiOutlineShoppingCart className='text-white text-2xl' /></sapn>
           <span className=' text-white text-sm'>Number of Orders</span>
           <span className='text-3xl text-white '>3</span>
@@ -34,9 +34,9 @@ function Dashboard() {
         </div>
          {/* .................................... */}
           {/* .................................... */}
-        <div className='w-full h-3/5 sm:w-2/6 lg:w-2/5  pl-3 pt-2 pb-1 flex items-center rounded-lg bg-gradient-to-b from-gray-900 to-gray-600 border shadow-2xl '>
+        <div className='w-full h-3/5 sm:w-2/6 lg:w-2/5  pl-3 pt-2 pb-1 flex items-center rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border shadow-2xl '>
           <div className=' flex flex-col pl-5 '>
-          <sapn className='flex w-8 h-8 justify-center items-center text-3xl  rounded-lg bg-gradient-to-t from-gray-900 via-purple-900 to-violet-600'>
+          <sapn className='flex w-8 h-8 justify-center items-center text-3xl  rounded-lg bg-blue-600'>
           <RiProductHuntLine className='text-white text-2xl ' /></sapn>
           <span className=' text-white text-sm '>Number of Products</span>
           <span className='text-3xl text-white '>3</span>
@@ -45,14 +45,14 @@ function Dashboard() {
          {/* .................................... */}
          
          </div>
-         <div className='flex justify-between  items-center  bg-gradient-to-b from-gray-900 to-gray-600 border  shadow-lg  hadow-xl px-5  py-2  rounded-xl'>
+         <div className='flex justify-between  items-center  bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-400 border  shadow-lg  hadow-xl px-5  py-2  rounded-xl'>
       <h1 className='text-2xl pb-2 text-white'>Latest Transactions</h1>
       </div>
     {/* order table start */}
-    <div className=' h-80 shadow-lg overflow-hidden hover:overflow-auto    rounded-lg'>
+    <div className=' h-80 overflow-hidden hover:overflow-auto    rounded-lg'>
     <div className='overflow-hidden'>
     <table className=' w-full overflow-auto    border      rounded-lg shadow-xl  text-left font-thin   '>
-        <thead className='bg-blue-800 w-full h-6 sticky   top-0 bg-gradient-to-b from-gray-900 to-gray-600 text-white '>
+        <thead className='bg-blue-800 w-full h-6 sticky   top-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-400 text-white '>
 
           <th className='border font-thin text-center text-lg pl-1 py-1'>Order ID</th>
           <th className='border font-thin text-lg pl-2 py-1'>Date</th>

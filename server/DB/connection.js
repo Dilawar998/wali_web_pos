@@ -1,16 +1,22 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
-try {
-    module.exports = mysql.createConnection({
-        // host:'localhost',
-        user:"root",
-        password:"admin",
-        database:'shop_management'
-    })
-    console.log("Connection Successfully");
+const connection = mysql.createConnection({
+    user: "root",
+    host:"localhost",
+    password: "abdul17097@",
+    database: "wali_pos"
+})
 
-} catch (error) {
-    console.log(error);
-}
+connection.connect((err)=>{
+    if(err) throw err;
+    console.log("Connected");
 
+    
+    
+    // connection.query("create database wali_pos",(err)=>{
+    //     if (err) throw err;
+    //     console.log("Database Created");
+    // })
+})
 
+module.exports = connection;

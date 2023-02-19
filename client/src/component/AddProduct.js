@@ -17,20 +17,20 @@ const AddProduct = () => {
     Name:"",
     Catagory:"",
     Price:"",
-    42: "",
-    40:"",
-    38:"",
-    36:"",
-    34:"",
-    32:"",
-    30:"",
-    28:"",
-    26:"",
-    24:"",
-    22:"",
-    20:"",
-    18:"",
-    16:"",    
+    Fourtytwo: "",
+    Fourty:"",
+    Thirtyeight:"",
+    Thirtysix:"",
+    Thirtyfour:"",
+    Thirtytwo:"",
+    Thirty:"",
+    Twentyeight:"",
+    Twentysix:"",
+    Twentyfour:"",
+    Twentytwo:"",
+    Twenty:"",
+    Eightheen:"",
+    Sixtheen:"",    
 }
 const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
   initialValues,
@@ -146,7 +146,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>42</label>
-          <input  type="text" value={values[42]} name='42'
+          <input  type="text" value={values.Fourtytwo} name='42'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -154,7 +154,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>40</label>
-          <input  type="text" value={values[40]} name='40'
+          <input  type="text" value={values.Fourty} name='40'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -162,7 +162,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>38</label>
-          <input  type="text" value={values[38]} name='38'
+          <input  type="text" value={values.Thirtyeight} name='38'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -170,7 +170,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>36</label>
-          <input  type="text" value={values[36]} name='36'
+          <input  type="text" value={values.Thirtysix} name='36'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -178,7 +178,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>34</label>
-          <input  type="text" value={values[34]} name='34'
+          <input  type="text" value={values.Thirtyfour} name='34'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -186,7 +186,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>32</label>
-          <input  type="text" value={values[32]} name='32'
+          <input  type="text" value={values.Thirtytwo} name='32'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -194,7 +194,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>30</label>
-          <input  type="text" value={values[30]} name='30'
+          <input  type="text" value={values.Thirty} name='30'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -202,7 +202,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>28</label>
-          <input  type="text" value={values[28]} name='28'
+          <input  type="text" value={values.Twentyeight} name='28'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -210,7 +210,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>26</label>
-          <input  type="text" value={values[26]} name='26'
+          <input  type="text" value={values.Twentysix} name='26'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -218,7 +218,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>24</label>
-          <input  type="text" value={values[24]} name='24'
+          <input  type="text" value={values.Twentyfour} name='24'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -226,7 +226,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>22</label>
-          <input  type="text" value={values[22]} name='22'
+          <input  type="text" value={values.Twentytwo} name='22'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -234,7 +234,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>20</label>
-          <input  type="text" value={values[20]} name='20'
+          <input  type="text" value={values.Twenty} name='20'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -242,7 +242,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>18</label>
-          <input  type="text" value={values[18]} name='18'
+          <input  type="text" value={values.Eightheen} name='18'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
@@ -250,7 +250,7 @@ const {values,handleBlur,errors,handleChange,handleSubmit} = useFormik({
         </div>
         <div className='flex w-1/5 my-3 flex-col  '>
           <label className='text-sm mb-1'>16</label>
-          <input  type="text" value={values[16]} name='16'
+          <input  type="text" value={values.Sixtheen} name='16'
           onChange={handleChange}
           onBlur={handleBlur}
           className='border pl-2 text-sm p-1  gap-x-4 rounded-lg'/>
